@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>practical 5 </title>
+<link rel="file:///D:/Desktop/it-engl/practical5.html#page%20home" href="styles.css">
+<style>
+.img1 {
+  max-width: 400px;
+ float:right;
+}
+.imgauto{
+max-width:400px;
+float:right;
+}
+.imgnegative{
+max-width:400px;
+float:right;
+}
+.img2{
+max-width:400px;
+float:right;
+}
+ul{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+background:#333;
+}
+li a {
+float:left;
+}
+li a {
+display:block;
+ color:white;
+ text-align:center;
+ padding:14px 16px;
+}
+li a:hover {
+background-color:#111;
+}
+footer {
+  background-color: darkgray;
+  color: black; 
+  padding: 10px;
+text-align:center;
+}
+ </style>
+</head>
+<body>
+<ul>
+<li><a class="avtive" href="#page home">Home</a></li>
+<li><a href="#web design">Web design</a></li>
+  <li><a href="#algomithem">Algomithem</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+<h1>a. What is a box model in CSS. Give box-sizing property definition</h1>
+<p><mark>The box model in CSS </mark>is the concept of elements taking up space in a page layout. Each HTML element is represented as a rectangular box on the page, occupies a certain space and can express meaning.</p>
+<p>The box-sizing attribute can <mark>set the size calculation rules for the element box.</mark>
+<em>It has two possible values:</em></p>
+<p><mark>1. content-box: </mark>When setting the width and height of an element, it will only be applied to the content area.</p>
+<p><mark>2. border-box: </mark>When setting the width and height of an element, these dimensions will be applied to the entire element box.</p>
+
+<div class="img2">
+  <img src="D:\Desktop\it-engl\prctical5\holy-grail-3-column-responsive-layout-diagram.png" alt="Floating Image" />
+</div>
+<h1>b. What is a “clearfix hack” and when does it need to be applied</h1>
+<p>ClearFix is a way to <mark>have elements automatically clear or fix their elements </mark>so that no additional markup is required.
+<p>When you want to<mark> solve a height collapse problem using pure CSS</mark>, you can use the "clearfix hack" to achieve this.
+or, when floating elements cause layout clutter,also can use “clearfix hack” to solve the problem.</p>
+<h1>c. What is a “margin collapse” and what are the use cases for margin: auto and negative margin values</h1>
+<p>"Margin collapse" occurs when the<mark> top and bottom margins of two adjacent </mark>elements are combined (collapsed) into a single margin. </p>
+<p> auto: This automatically <mark>centers the element</mark> and divides the space equally.
+For example css
+.center(
+    Width: 200px;
+    Margin: automatic;
+)</p>
+
+<p>Negative margin values: Negative margins can be used to create an overlapping effect, adjust positioning, or bring elements closer to each other.</p>
+
+<h1>d. What was the problem with achieving Holy Grail layout</h1>
+<p><mark>Same Height Columns</mark>: Make the header, main content, and footer the same height, which is difficult to achieve using just CSS without resorting to hacks or workarounds.</p>
+<p>Fluid and Responsive Design: Holy Grail layout becomes fluid and responsive in order to adapt to different screen sizes and devices.</p>
+<h1>e. What are the modern ways to achieve Holy Grail layout</h1>
+
+
+<p>Modern methods of implementing holy grail layouts typically use Flexbox or CSS Grid layout. These modern layout techniques provide an easier and more flexible way to create complex layouts,</p>
+
+
+<footer>
+  <p>cao-wenzhuo</p>
+  <p>web design</p>
+  <p>22-4-2024</p>
+  <h3>Interesting Links:</h3>
+  <ul>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2 </a></li>
+    <li><a href="#">3</a></li>
+  </ul>
+</footer>
+
+
+<div class="imgauto">
+  <img src="D:\Desktop\it-engl\prctical5\3qb76c9980yokju8bk0s.png" alt="Floating Image" />
+</div>
+
+
+ <div class="imgnegative">
+  <img src="D:\Desktop\it-engl\prctical5\Negative-margin-in-css-2.jpg" alt="Floating Image" />
+</div>
+
+<div class="img1">
+  <img src="D:\Desktop\it-engl\prctical5\022345511601591.jpg" alt="Floating Image" />
+</div>
+
+
+
+</body>
+</html>
