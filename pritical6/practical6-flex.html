@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Title</title>
+<style>
+.container{
+display:flex;
+flex-wrap:wrap;
+}
+.top-section{ 
+align-self: flex-start;
+        padding: 20px;
+        margin-bottom: 10px;
+background-color:#f0f0f0;
+text-align:center;
+    }
+    .top-section img {
+        max-width: 70%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+.content { flex: 1 1 30%;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+.content img {max-width: 100%;
+        height: auto;
+    }
+.content h2 {
+color:mediumvioletred;
+}
+.content .excerpt {
+        display: none;
+    }
+@media only screen and (min-width: 768px) {
+        .content {
+            flex: 1 1 45%;
+        }
+        .content .excerpt {
+            display: block;
+            margin-top: 10px;
+        }
+    }
+    @media only screen and (min-width: 1024px) {
+        .container {
+            flex-direction: row;
+        }
+        .sidebar {
+            flex: 1 1 30%;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    }
+.content{
+flex:1;
+background-color:oldlace;
+padding:20px;
+margin:10px;
+}
+.sidebar{
+flex:1;
+background-color:mintcream;
+padding:20px;
+margin:10px;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<div class="top-section">
+<img src="platinum-banner.jpg">
+<p>history about baking</p>
+<button>read more</button>
+</div>
+<div class="container">
+<div class="content">
+ <div class="content">
+        
+        <h2>Cake</h2>
+<img src="strawberry-cheesecake-11.jpg" alt="content 3">
+        <p><em>The greatest invention in baking</em></p>
+        <p class="excerpt">Cakes are broadly divided into several categories, mainly based on ingredients and mixing techniques. While clear examples of the difference between cakes and breads are easy to find, precise classification has been elusive. Butter cake is made from creamed butter, sugar, eggs and flour.</p>
+        <button>Read More</button>
+    </div>
+<h2>Bread</h2>
+<img src="下载 (3).jpg" alt="content 2">
+        <p><em>God's darling-People's favorite staple food </em></p>
+        <p class="excerpt">The so-called bread is made from rye, wheat and other food crops as basic raw materials. It is first ground into powder, then mixed with water, salt, yeast, etc. to make a dough base, which is then heated by baking, roasting, steaming or frying. </p>
+        <button>Read More</button>
+</div>
+<div class="content">
+        <h2>Biscuits</h2>
+<img src="1c2ca998d5cd7096d48e7711dbf633d81.jpg" alt="content 4">
+        <p><em>Baking elf</em></p>
+        <p class="excerpt">Biscuits are a kind of flour-based baked goods. Biscuits come in various shapes and can be filled or decorated. In addition, some baked goods that do not contain flour, such as macaroons and macarons, are also called cookies.</p>
+        <button>Read More</button>
+
+<h2>what is baking</h2>
+<img src="5835.jpg_wh300.jpg" alt="content 1">
+<p><em>The star of parties and afternoon tea</em></p>
+<p class="excerpt">Baking refers to the technology of making baked foods such as bread, cakes, biscuits, pastries, pies, tarts, pizzas, puffs, etc. It is common in Western-style cooking and is usually baked in an oven.</p>
+        <button>Read More</button>
+        
+    </div>
+
+   
+    <div class="sidebar">
+        <h3> Menu</h3>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">news</a></li>
+            <li><a href="#">Popular trends</a></li>
+           <li><a href="#">log in</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+</body>
+</html>
