@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style>
+.slider {
+  display: none;
+background-color:lavender;
+}
+.active {
+  display: block;
+}
+form{
+padding:20px;
+border: 1px solid #ccc;
+width:300px;
+}
+button{ background-color: #4CAF50;
+            color: white;
+cursor:pointer;
+}
+button:honver{
+background-color: #45a049;
+        }
+</style>
+</head>
+<body>
+<div class="slider active">
+  <h1>caculate</h1>
+ <form>
+  <label for="num1">enter number:</label><br>
+  <input type="number" id="num1" name="num1" value="0"><br>
+  <label for="num2">enter number:</label><br>
+  <input type="number" id="num2" name="num2" value="0"><br>
+<label for="operator">Choose an operation:</label>
+ <input type="radio" id="plus" name="fav_language" value="plus">
+  <label for="plus">plus+</label><br>
+  <input type="radio" id="minus" name="fav_language" value="minus">
+  <label for="minus">mins-</label><br>
+  <input type="radio" id="multiplcation" name="fav_language" value="multiplcation">
+  <label for="multiplcation">multiplcation*</label>
+<input type="radio" id="divide" name="fav_language" value="divide">
+  <label for="divide">divide/</label>
+   <button onclick="performCalculation()">Calculate</button>
+        <button type="reset">Reset</button>   
+        <output id="result"></output>
+    </form>
+
+    <script>
+function calculate(num1, operator, num2) {
+ switch(operator) {
+ case '+':
+ return num1 + num2;
+ case '-':
+ return num1 - num2;
+ case '*':
+ return num1 * num2;
+ case '/':
+ if(num2 != 0) {
+ return num1 / num2;
+ } else {
+ return "Error: Division by zero is not 
+allowed.";
+ }
+ default:
+ return "Error: Invalid operator.";
+ }
+}
+function performCalculation() {
+ var num1 = 
+parseFloat(document.getElementById('num1').value);
+ var operator = document.getElementById('operator').value;
+ var num2 = 
+parseFloat(document.getElementById('num2').value);
+ var result = calculate(num1, operator, num2);
+ document.getElementById('result').value = "The result is: "
++ result;
+}
+       
+    </script>
+</div>
+</div>
+
+<div class="slider">
+  <h2> Explain “repaint” and “reflow” of the webpage.</h2>
+  <p> Repaint is when the appearance of the web page needs to be changed without affecting the layout. The browser redraws the element's appearance but does not change its position or size. Reflow is When the page layout changes, the position and size of elements need to be recalculated.</p>
+Inefficient JavaScript code can cause performance issues such as slow responsiveness, choppy animations, and high CPU usage. </div>
+<div class="slider">
+ <h2>How does JavaScript on the webpage affect the page load speed and performance?</h2>
+  <p>JavaScript files loaded and executed synchronously,  means that the browser has to wait for the JavaScript code to be downloaded and executed 。if the files are large ,the page loading ganna to delays.
+Inefficient JavaScript code can cause performance issues such as slow responsiveness, choppy animations, and high CPU usage. </p>
+</div>
+
+<div class="slider">
+  <h2>What is “minification” of the script? Why it is useful to minify your scripts?</h2>
+  <p> refers to  removing unnecessary characters from the code, in order to reduce the size of the script file. it is useful for reduce the download time for users,improve the page load speed.totally improve the proformence for web.</p>
+</div>
+
+<div class="slider">
+  <h2>What is a JS Web Worker and when do we need it?</h2>
+  <p> JavaScript Web Worker is a script that runs in the background, separate from the main thread of the web page.</p>
+</div>
+
+<div class="slider">
+  <h2>Final Slide - Sources:</h2>
+  <ul>
+  <li><a href="https://medium.com/swlh/what-the-heck-is-repaint-and-reflow-in-the-browser-b2d0fb980c08">Source 1</a></li>
+  <li><a href="https://www.searchenginewatch.com/2017/06/23/how-javascript-impacts-page-loading-speed-on-mobile">Source 2</a></li>
+  <li><a href="https://www.imperva.com/learn/performance/minification/">source 3</a></li>
+ <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers">soucrce4</a></li>
+ </ul>
+</div>
+
+<button onclick="nextSlide()">Next</button>
+
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slider');
+
+function nextSlide() {
+  slides[currentSlide].classList.remove('active');
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].classList.add('active');
+}
+</script>
+
+</body>
+</html>
